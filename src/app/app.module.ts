@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosModule } from './alunos/alunos.module';
 // import { CursosComponent } from './cursos/cursos.component';
 
 // import { routing } from './app.routing';
@@ -26,7 +27,8 @@ import { CursosModule } from './cursos/cursos.module';
     BrowserModule,
     // routing,
     CursosModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AlunosModule
   ],
   providers: [
     // CursosService

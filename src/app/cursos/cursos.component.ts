@@ -32,8 +32,10 @@ export class CursosComponent {
   }
 
   ngOnDestroy(){
-    this.inscricao.unsubscribe();
-  }
+    if (this.inscricao) {
+      this.inscricao.unsubscribe();
+    }
+  }  
 
   proximaPagina(){
     // this.pagina++;

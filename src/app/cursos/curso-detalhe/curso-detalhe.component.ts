@@ -24,7 +24,7 @@ export class CursoDetalheComponent {
     // this.id = this.route.snapshot.params['id'];
   }
 
-  ngOnInit() {
+  ngOnInit() { 
     this.inscricao = this.route.params.subscribe(
       (params: any) => {
         this.id = params['id'];

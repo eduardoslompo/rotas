@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { AuthGuard } from './guards/auth.guard';
 import { CursosGuard } from './guards/cursos.guard';
 import { AlunosGuard } from './guards/alunos.guard';
+import { AlunoDetalheResolver } from './guards/aluno-detalhe.resolver';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 // import { CursosModule } from './cursos/cursos.module';
 // import { AlunosModule } from './alunos/alunos.module';
 // import { CursosComponent } from './cursos/cursos.component';
@@ -23,7 +25,8 @@ import { AlunosGuard } from './guards/alunos.guard';
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    PaginaNaoEncontradaComponent
     // CursosComponent,
     // CursoDetalheComponent,
     // CursoNaoEncontradoComponent
@@ -41,7 +44,8 @@ import { AlunosGuard } from './guards/alunos.guard';
     AuthService,
     AuthGuard,
     CursosGuard,
-    AlunosGuard
+    AlunosGuard,
+    AlunoDetalheResolver
   ],
   bootstrap: [
     AppComponent

@@ -12,6 +12,7 @@ import { CursosGuard } from './guards/cursos.guard';
 import { AlunosGuard } from './guards/alunos.guard';
 import { AlunoDetalheResolver } from './guards/aluno-detalhe.resolver';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { CursosModule } from './cursos/cursos.module';
 // import { AlunosModule } from './alunos/alunos.module';
 // import { CursosComponent } from './cursos/cursos.component';
@@ -36,7 +37,8 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao
     // routing,
     // CursosModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
     // AlunosModule
   ],
   providers: [
